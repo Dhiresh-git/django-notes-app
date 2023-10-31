@@ -2,10 +2,8 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app']
+  args: ['push', 'us-central1-docker.pkg.dev/prod-project-402708/notes-app']
 images: 
-- prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app
+- us-central1-docker.pkg.dev/prod-project-402708/notes-app
 options:
   logging: CLOUD_LOGGING_ONLY
-
-
