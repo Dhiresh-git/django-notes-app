@@ -5,3 +5,6 @@ steps:
   args: ['push', 'prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app']
 images: 
 - prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app
+options:
+  logOption: 'CLOUD_LOGGING_ONLY'
+
