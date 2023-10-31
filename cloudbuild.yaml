@@ -3,3 +3,5 @@ steps:
   args: ['build', '-t', 'prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app', '.']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['push', 'prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app']
+images: 
+- prod-project-docker.pkg.dev/prod-project-402708/notes-app/notes-app
